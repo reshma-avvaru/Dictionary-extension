@@ -1,0 +1,21 @@
+{
+    "name":"Meaning",
+    "version":"0.0",
+    "description":"Find meaning of selected word",
+    "manifest_version":2,
+    "background": {
+    	"scripts": ["background.js"],
+    	"persistent": false
+  	},
+    "permissions": ["activeTab", "tabs"],
+    "icons": {
+        "16": "icon.jpg"
+    },
+    "browser_action": {},
+    "commands":{
+        "_execute_browser_action": {
+            "suggested_key": "Ctrl+Shift+L",
+            "description": "Search meaning of word"
+        }
+    }
+}
